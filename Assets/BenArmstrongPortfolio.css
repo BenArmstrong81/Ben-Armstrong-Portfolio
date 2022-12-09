@@ -1,0 +1,107 @@
+.header {
+    padding: 20px;
+    --font-family: 'Ubuntu', 'arial', 'helvetica', 'sans-serif';
+    background-color: #2F5578;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.header nav ul {
+    background-color: #2F5578;
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    font-family: var(--font-family)
+    margin-right: 25px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  
+nav a {
+    background-color: unset;
+    color: #ffffff;
+    font-family: var(--font-family)
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+nav a:hover {
+    color: var(--light);
+  }
+
+p {
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+
+h2 {
+    font-size: 35px;
+    font-family: var(--font-family);
+}
+
+.coding {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../Images/Ben\ Head\ Shot\ April2017\ 300x300.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.about-me {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: var(--font-family);
+    background: rgb(47,85,120);
+    background: linear-gradient(180deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(237,237,237,1) 100%); 
+    color: #ffffff;
+}
+
+  footer {
+    display: flex;
+    justify-content: center;
+    --font-family: 'Ubuntu', 'arial', 'helvetica', 'sans-serif';
+    font-style: italic;
+    padding: 2%;
+    background-color: #2F5578;
+    color: #ffffff;
+  }
+
+  /* Media Queries */
+  /* Tablets */
+  @media screen and (max-width: 768px) {
+    #feature 1 {
+        width: 46%
+    }
+  }
+
+  /* Mobiles */
+  @media screen and (max-width: 480px) {
+    #feature 1 {
+        width:92%
+    }
+  }
