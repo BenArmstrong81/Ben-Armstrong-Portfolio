@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .header {
     padding: 20px;
     --font-family: 'Ubuntu', 'arial', 'helvetica', 'sans-serif';
@@ -44,7 +50,7 @@ nav a {
   }
   
 nav a:hover {
-    color: var(--light);
+    color: #82817F;
   }
 
 p {
@@ -68,18 +74,36 @@ h2 {
 
 .float-left {
     float: left;
+    height: auto;
+    width: 12%;
     margin-right: 25px;
 }
 
 .about-me {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    margin-bottom: 0px;
+    padding: 0px;
+    height: 250px;
     font-family: var(--font-family);
     background: rgb(47,85,120);
-    background: linear-gradient(180deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(237,237,237,1) 100%); 
+    background: linear-gradient(180deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(130,129,127,1) 100%);
     color: #ffffff;
 }
+
+
+.Contact {
+    padding: 30px;
+    height: 195px;
+    font-family: var(--font-family);
+    background: rgb(47,85,120);
+    background: linear-gradient(0deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(130,129,127,1) 100%);
+    color: #ffffff;
+}
+
+.Contact ul {
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
 
   footer {
     display: flex;
