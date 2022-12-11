@@ -1,14 +1,20 @@
+:root {
+    --altruism-blue: #2F5578;
+    --text-colour-white: #ffffff;
+    --font-family: 'Ubuntu', 'arial', 'helvetica', 'sans-serif';
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 .header {
     padding: 20px;
-    --font-family: 'Ubuntu', 'arial', 'helvetica', 'sans-serif';
-    background-color: #2F5578;
-    color: #ffffff;
+    font: var(--font-family);
+    background-color: var(--altruism-blue);
+    color: var(--text-colour-white);
 }
 
 .header h1 {
@@ -18,21 +24,21 @@
 
 .header nav {
     padding-top: 15px;
-    margin-right: 20px;
+    justify-content: space-between;
+    min-width: 400px;
     float: right;
-    font-family: var(--font-family);
+    font: var(--font-family);
     font-size: 20px;
 }
 
 .header nav ul {
-    background-color: #2F5578;
+    background-color: var(--altruism-blue);
     list-style-type: none;
 }
 
 .header nav ul li {
     display: inline-block;
-    font-family: var(--font-family)
-    margin-right: 25px;
+    font: var(--font-family);
 }
 
 nav ul {
@@ -43,8 +49,8 @@ nav ul {
   
 nav a {
     background-color: unset;
-    color: #ffffff;
-    font-family: var(--font-family)
+    color: var(--text-colour-white);
+    font: var(--text-colour-white);
     font-weight: bold;
     text-decoration: none;
   }
@@ -54,13 +60,13 @@ nav a:hover {
   }
 
 p {
-    font-size: 20px;
-    font-family: var(--font-family);
+    font-size: 25px;
+    font: var(--font-family);
 }
 
 h2 {
     font-size: 35px;
-    font-family: var(--font-family);
+    font: var(--font-family);
 }
 
 .coding {
@@ -83,49 +89,150 @@ h2 {
     margin-bottom: 0px;
     padding: 0px;
     height: 250px;
-    font-family: var(--font-family);
+    font: var(--font-family);
     background: rgb(47,85,120);
     background: linear-gradient(180deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(130,129,127,1) 100%);
-    color: #ffffff;
+    color: var(--text-colour-white);
 }
 
+
+.all-work {
+    height: auto; 
+}
+
+.work {
+    float: left;
+    color: var(--text-colour-white);
+    padding: 15px;
+
+}
+
+.all-projects {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body {
+    background-image: url(../Images/Coding.jpg);
+    background-repeat: no-repeat;
+}
+
+.master-project {
+    background-image: url(..//Images/Armstrong\,\ Ben\ -\ Horiseon-Refactor-Project.png);
+    height: 0 0 100%;
+    width: 0 0 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: flex;
+  }
+  
+  /* Place text in the middle of the image */
+  .project1-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: var(--text-colour-white);
+  }
+
+.all-other-projects {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    /* background-image: url("../Images/Coming\ Soon2.jpg"); */
+  
+    /* Set a specific height */
+    /* height: 0 0 100%;
+    width: 0 0 100%; */
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    gap: 10px;
+  }
+  
+  /* Place text in the middle of the image */
+  .project2-text, .project3-text, .project4-text, .project5-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: var(--text-colour-white);
+  }
+ 
 
 .Contact {
     padding: 30px;
-    height: 195px;
-    font-family: var(--font-family);
+    /* height: 195px; */
+    font: var(--font-family);
     background: rgb(47,85,120);
     background: linear-gradient(0deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(130,129,127,1) 100%);
-    color: #ffffff;
+    color: var(--text-colour-white);
 }
 
 .Contact ul {
-    font-size: 25px;
-    font-family: var(--font-family);
+    font-size: 35px;
+    font: var(--font-family);
 }
 
 
   footer {
     display: flex;
     justify-content: center;
-    --font-family: 'Ubuntu', 'arial', 'helvetica', 'sans-serif';
+    font: var(--font-family);
     font-style: italic;
     padding: 2%;
-    background-color: #2F5578;
-    color: #ffffff;
+    background-color: var(--altruism-blue);
+    color: var(--text-colour-white);
   }
 
   /* Media Queries */
   /* Tablets */
-  @media screen and (max-width: 768px) {
-    #feature 1 {
-        width: 46%
+  @media screen and (min-width: 768px) {
+    .master-project {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .all-other-projects {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
   }
 
   /* Mobiles */
   @media screen and (max-width: 480px) {
-    #feature 1 {
-        width:92%
+
+    header h1{
+        display: block;
+        text-align: center;
+    }
+    header nav {
+        text-align: center;
+        float: none;
+    }
+
+    header li {
+        display: block;
+    }
+
+    .about-me {
+        display: block;
+        float: none;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        border-right: none;
+    }
+
+    .master-project, .all-other-projects {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
   }
