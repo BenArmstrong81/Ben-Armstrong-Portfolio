@@ -20,7 +20,6 @@
 }
 
 .header h1 {
-    /* display: inline-block; */
     font-size: 48px;
 }
 
@@ -118,17 +117,15 @@ p {
 main {
     background-image: url(../Images/Coding.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.master-project:first-of-type {
-    flex-basis: 80%;
+.flexbox1-images{
+    width: 100%;
 }
 
 .master-project {
-    /* background-image: url(../Images/Armstrong\,\ Ben\ -\ Horiseon-Refactor-Project\ 900x600.png); */
-    /* height: 0 0 100%;
-    width: 0 0 100%; */
-  
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
@@ -142,17 +139,10 @@ main {
 
 .master-project h4{
     font-size: 30px;
-    color: red;
+    color: var(--text-colour-white);
 }
 
 .all-other-projects {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    /* background-image: url("../Images/Coming\ Soon2.jpg"); */
-  
-    /* Set a specific height */
-    /* height: 0 0 100%;
-    width: 0 0 100%; */
-  
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
@@ -162,8 +152,6 @@ main {
     position: flex;
     position: relative;
     padding: 7.5px 5px;
-
-      /* Place text in the middle of the image */
   }
 
   .project1-text {
@@ -174,7 +162,6 @@ main {
     transform: translate(-50%, -50%);
     color: var(--text-colour-white);
   }
-
 
   /* Place text in the middle of the image */
   .project-text {
@@ -193,7 +180,6 @@ main {
 
 .Contact {
     padding: 30px;
-    /* height: 195px; */
     font: var(--font-family);
     background: rgb(47,85,120);
     background: linear-gradient(0deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(130,129,127,1) 100%);
@@ -209,88 +195,103 @@ main {
 }
 
 
-  footer {
+footer {
     display: flex;
     justify-content: center;
     font: var(--font-family);
     padding: 2%;
     background-color: var(--altruism-blue);
     color: var(--text-colour-white);
-  }
+}
 
   /* Media Queries */
 
   /* Tablets */
     @media screen and (max-width: 920px){
-        .header {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        }
+    .header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    }
 
-        h1 {
-        font-size: 20px;
-        }
+    h1 {
+    font-size: 20px;
+    }
 
-        nav ul{
-        display: flex;
-        flex-direction: column;
-        }
+    nav ul{
+    display: flex;
+    flex-direction: column;
+    }
 
-        .body {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        flex-direction: column;   
-        }
+    .body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;   
+    }
 
-        .master-project {
-        max-width: 450px;
-        max-height: 300px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        flex-direction: column;
-        }
+    .master-project {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    }
 
-        .all-other-projects {
-        max-width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        flex-direction: column;
-        }
+    .all-other-projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    }
 
 
-        .Contact {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        }
+    .Contact {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    }
 
-        .work{
-            display: none;
-        }
+    .work{
+    display: none;
+    }
        
-        footer {
-            flex-direction: row;
-            justify-content: space-between;
-            text-align: center;
-        }
+    footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    }
     }
 
   /* Mobiles */
   @media screen and (max-width: 480px) {
 
     .header {
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
     }
     nav ul{
-        display: flex;
-        text-align: center;
-        flex-direction: column;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    }
+    .master-project {
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    }
+
+    .all-other-projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
     }
 }
