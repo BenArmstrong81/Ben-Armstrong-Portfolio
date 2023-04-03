@@ -68,7 +68,7 @@ To use and view this challenge please use this the following link to access the 
 My Web Development Portfolio webpage includes a navigation bar, a professional head shot image, multiple links (placeholders at this stage) to projects completed within the UniSA Full Stack Web Development course, and working links to contact me - you can even download a updated resume.
 The following image shows the web application's appearance:
 
-![My Web Development Portfolio webpage includes a navigation bar, a professional head shot image, multiple links (placeholders at this stage) to projects completed within the UniSA Full Stack Web Development course, and working links to contact me - even download an updated resume.](./Images/BenArmstrongPortfolioWebsiteScreenShot.JPG)
+![My Web Development Portfolio webpage includes a navigation bar, a professional head shot image, multiple links (placeholders at this stage) to projects completed within the UniSA Full Stack Web Development course, and working links to contact me - even download an updated resume.](./Images/ForReadmeFile.PNG)
 
 # Credits
 With special thanks to the UniSA Full Stack Web Development Class.
