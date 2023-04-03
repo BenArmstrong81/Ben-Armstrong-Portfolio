@@ -59,6 +59,7 @@ nav a:hover {
 
 p {
     font-size: 16px;
+    text-align: start;
 }
 
 .about-me h2 {
@@ -168,9 +169,10 @@ main {
     text-align: center;
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 38%;
     transform: translate(-50%, -50%);
-    color: var(--text-colour-white);
+    color: black;
+    /* color: var(--text-colour-white); */
   }
 
   .all-other-projects h4 {
